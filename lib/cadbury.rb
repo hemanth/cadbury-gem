@@ -5,7 +5,11 @@ class Cadbury
   def self.gems(count=10)
     gem="•"
     count.times do
-      print gem.send(gem.colors.sample)
+      if RUBY_VERSION =~ /1.9/
+        print gem.send(gem.colors.sample)
+      else
+        print gem.send(gem.colors.choice)
+      end
     end
     puts
   end
