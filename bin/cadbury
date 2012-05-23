@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'cadbury'
 if (ARGV.size > 0)  
-    puts Cadbury.gems(ARGV[0])
+    puts Cadbury.gems(ARGV[0].to_i)
 else
     puts Cadbury.gems()
 end
