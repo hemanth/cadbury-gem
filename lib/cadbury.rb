@@ -10,5 +10,3 @@ class Cadbury
     puts
   end
 end
-
-Cadbury.gems()
